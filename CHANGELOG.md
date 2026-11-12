@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.4.0](https://github.com/dev-murphy/yaadchess/compare/v0.3.2...v0.4.0) (2026-11-12)
+
+### Features
+
+* create Board component ([49e7241](https://github.com/dev-murphy/yaadchess/commit/49e72410e87f26611a36283e6a23c8d125cc6456))
+* update pinia store to initialize board UI (doesn't include pieces) ([e59621a](https://github.com/dev-murphy/yaadchess/commit/e59621a580658eedcb3a1d0f206c72c4ec7e47d4))
+* create Piece component ([0bf5cf5](https://github.com/dev-murphy/yaadchess/commit/0bf5cf5ff0e9a5759c12e014c49dbc734ef907a8))
+* add basic types for piece information and board UI ([cc68994](https://github.com/dev-murphy/yaadchess/commit/cc6899474572dacd62226ee070bc7ab81ebab728))
+* add first piece set to app ([7682d4c](https://github.com/dev-murphy/yaadchess/commit/7682d4cd258247cbe6671898663d8f17ba00eb34))
+
+### Documentation
+
+* update README with basic project information ([9f3da6c](https://github.com/dev-murphy/yaadchess/commit/9f3da6c44714a7f914631f13dc086a203b98fd14))
+
+### Miscellaneous
+
+* ensure elements stack on top of each other ([56072bc](https://github.com/dev-murphy/yaadchess/commit/56072bccd6ee9181552fb19c3105d5636e7b66a5))
+* create helper function to get piece image ([4dcdcc6](https://github.com/dev-murphy/yaadchess/commit/4dcdcc6ee9af995f889361a9ec82480ff09325f8))
+* auto-gen component types ([6d07a0c](https://github.com/dev-murphy/yaadchess/commit/6d07a0cb21ec5e5904417432663fe57942f7e780))
+
+## [0.3.2](https://github.com/dev-murphy/yaadchess/releases/tag/v0.3.2) (2026-11-12)
+
+### Bug Fixes
+
+* prevent repeated CHANGELOG heading ([df5a423](https://github.com/dev-murphy/yaadchess/commit/df5a423c4f9472a6f8f80d73e4e37d1eac109654))
+
+
 ## [0.3.2](https://github.com/dev-murphy/yaadchess/compare/v0.3.1...v0.3.2) (2026-11-12)
 
 ### Bug Fixes
