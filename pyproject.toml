@@ -30,3 +30,43 @@ update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"
 changelog_incremental = true
 major_version_zero = true
+
+[tool.commitizen.customize]
+message_template = "{{change_type}}{% if scope %}({{scope}}){% endif %}{% if breaking %}!{% endif %}: {{message}}"
+example = "feat(engine): add UCI support"
+schema = "<type>(<scope>): <message>"
+schema_pattern = "^(feat|fix|docs|ui|chore|refactor|test|perf|build|ci|style|revert)(\\([a-zA-Z0-9._-]+\\))?!?: .+$"
+
+commit_parser = "^(?P<change_type>feat|fix|docs|ui|chore|refactor|test|perf|build|ci|style|revert)(?:\\((?P<scope>[^()\\r\\n]*)\\))?(?P<breaking>!)?:\\s(?P<message>.*)"
+
+changelog_pattern = "^(feat|fix|docs|ui|chore|refactor|test|perf|build|ci|style|revert)(\\([^)]+\\))?!?:"
+
+change_type_map = {
+    "feat" = "Features",
+    "fix" = "Bug Fixes",
+    "docs" = "Documentation",
+    "ui" = "UI Updates",
+    "chore" = "Miscellaneous",
+    "refactor" = "Code Refactors",
+    "test" = "Tests",
+    "perf" = "Performance",
+    "build" = "Build System",
+    "ci" = "Continuous Integration",
+    "style" = "Styles",
+    "revert" = "Reverts"
+}
+
+change_type_order = [
+    "Features",
+    "Bug Fixes",
+    "UI Updates",
+    "Performance",
+    "Code Refactors",
+    "Documentation",
+    "Tests",
+    "Miscellaneous",
+    "Build System",
+    "Continuous Integration",
+    "Styles",
+    "Reverts"
+]

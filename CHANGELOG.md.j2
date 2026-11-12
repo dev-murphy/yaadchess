@@ -1,0 +1,18 @@
+
+# Changelog
+
+{% for release in tree %}
+{% if not loop.last %}
+## [{{ release.version }}](https://github.com/dev-murphy/yaadchess/compare/v{{ tree[loop.index0 + 1].version }}...v{{ release.version }}) ({{ release.date.strftime("%Y-%m-%d") }})
+{% else %}
+## {{ release.version }} ({{ release.date.strftime("%Y-%m-%d") }})
+{% endif %}
+
+{% for change_type, changes in release.changes %}
+### {{ change_type }}
+
+{% for change in changes %}
+* {% if change.scope %}**{{ change.scope }}:** {% endif %}{{ change.message }} ([{{ change.sha1[:7] }}](https://github.com/dev-murphy/yaadchess/commit/{{ change.sha1 }}))
+{% endfor %}
+{% endfor %}
+{% endfor %}
