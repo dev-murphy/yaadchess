@@ -1,15 +1,3 @@
-## 0.2.0 (2026-11-12)
-
-### Feat
-
-- add automated release github action
-- add uv, ruff and pytest packages
-- add .gitignore file
-
-# Changelog
-
-# Changelog
-
 # Changelog
 
 ## [0.3.0](https://github.com/dev-murphy/yaadchess/compare/v0.2.2...v0.3.0) (2026-11-12)
