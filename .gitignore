@@ -1,6 +1,7 @@
 # Python specific files/folders
 .venv/
 __pycache__/
+.ruff_cache/
 
 # General production folder
 .vscode/
