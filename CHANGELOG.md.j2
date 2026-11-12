@@ -2,8 +2,9 @@
 # Changelog
 
 {% for release in tree %}
+{% set previous = tree[loop.index0 + 1] if false else none %}
 {% if not loop.last %}
-## [{{ release.version }}](https://github.com/dev-murphy/yaadchess/compare/v{{ tree[loop.index0 + 1].version }}...v{{ release.version }}) ({{ release.date.strftime("%Y-%m-%d") }})
+## [{{ release.version }}](https://github.com/dev-murphy/yaadchess/compare/v{{ release.version }}...v{{ release.version }}) ({{ release.date.strftime("%Y-%m-%d") }})
 {% else %}
 ## {{ release.version }} ({{ release.date.strftime("%Y-%m-%d") }})
 {% endif %}
