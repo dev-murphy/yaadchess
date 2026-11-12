@@ -21,7 +21,7 @@ indent-style = "space"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
+version = "0.2.0"
 tag_version = "v$version"
 version_file = [
   "pyproject.toml:version"
