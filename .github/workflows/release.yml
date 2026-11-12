@@ -36,4 +36,4 @@ jobs:
         run: cz bump --yes --changelog
 
       - name: Push version and tags
-        run: git push --follow-tags
+        run: git push origin HEAD:main --follow-tags
