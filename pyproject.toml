@@ -3,3 +3,22 @@ name = "yaadchess"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.19.3",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_version = "v$version"
+version_file = [
+  "pyproject.toml:version"
+]
+update_changelog_on_bump = true
+changelog_file = "CHANGELOG.md"
+changelog_incremental = true
+major_version_zero = true
