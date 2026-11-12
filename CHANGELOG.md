@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.2](https://github.com/dev-murphy/yaadchess/compare/v0.3.1...v0.3.2) (2026-11-12)
+
+### Bug Fixes
+
+* prevent repeated CHANGELOG heading ([df5a423](https://github.com/dev-murphy/yaadchess/commit/df5a423c4f9472a6f8f80d73e4e37d1eac109654))
+
+## [0.3.1](https://github.com/dev-murphy/yaadchess/releases/tag/v0.3.1) (2026-11-12)
+
+### Bug Fixes
+
+* resolve issue with CHANGELOG template and CHANGELOG ([1954e82](https://github.com/dev-murphy/yaadchess/commit/1954e82e38a080329f365ddbe1795eb3b842669e))
+
+
 ## [0.3.1](https://github.com/dev-murphy/yaadchess/compare/v0.3.0...v0.3.1) (2026-11-12)
 
 ### Bug Fixes
