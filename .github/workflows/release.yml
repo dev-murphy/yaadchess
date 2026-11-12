@@ -1,0 +1,39 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+ contents: write
+
+jobs:
+  release:
+    name: Version and Release
+    runs-on: ubuntu-latest
+
+    # Avoid double commiting release commit
+    if: "!startsWith(github.event.head_commit.message, 'bump:')"
+
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          token: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Setup Python project
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install Commitizen
+        uses: commitizen-tools/setup-cz@main
+
+      - name: Bump version and generate changelog
+        run: cz bump --yes --changelog
+
+      - name: Push version and tags
+        run: git push --follow-tags
