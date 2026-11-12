@@ -1,0 +1,16 @@
+# Python specific files/folders
+.venv/
+__pycache__/
+
+# General production folder
+.vscode/
+dist/
+build/
+
+# Environment Variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
