@@ -1,19 +1,37 @@
 
 # Changelog
 
-{% for release in tree %}
-{% set previous = tree[loop.index0 + 1] if false else none %}
-{% if not loop.last %}
-## [{{ release.version }}](https://github.com/dev-murphy/yaadchess/compare/v{{ release.version }}...v{{ release.version }}) ({{ release.date.strftime("%Y-%m-%d") }})
+{% set releases = tree | list %}
+{% for release in releases %}
+{% if release.version == "Unreleased" %}
+## Unreleased
+{% elif not loop.last %}
+## [{{ release.version | replace("v", "") }}](https://github.com/dev-murphy/yaadchess/compare/{{ releases[loop.index0 + 1].version }}...{{ release.version }}) ({{ release.date }})
 {% else %}
-## {{ release.version }} ({{ release.date.strftime("%Y-%m-%d") }})
+## [{{ release.version | replace("v", "") }}](https://github.com/dev-murphy/yaadchess/releases/tag/{{ release.version }}) ({{ release.date }})
 {% endif %}
 
-{% for change_type, changes in release.changes %}
-### {{ change_type }}
+{% for change_type, changes in release.changes.items() %}
+### {{
+    {
+        "Feat": "Features",
+        "Fix": "Bug Fixes",
+        "Docs": "Documentation",
+        "UI": "UI Updates",
+        "Chore": "Miscellaneous",
+        "Refactor": "Code Refactors",
+        "Test": "Tests",
+        "Perf": "Performance",
+        "Build": "Build System",
+        "CI": "Continuous Integration",
+        "Style": "Styles",
+        "Revert": "Reverts"
+    }.get(change_type, change_type)
+}}
 
 {% for change in changes %}
 * {% if change.scope %}**{{ change.scope }}:** {% endif %}{{ change.message }} ([{{ change.sha1[:7] }}](https://github.com/dev-murphy/yaadchess/commit/{{ change.sha1 }}))
 {% endfor %}
+
 {% endfor %}
 {% endfor %}
