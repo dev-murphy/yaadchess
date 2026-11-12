@@ -1,7 +1,5 @@
 # Changelog
 
-# Changelog
-
 ## [0.3.1](https://github.com/dev-murphy/yaadchess/compare/v0.3.0...v0.3.1) (2026-11-12)
 
 ### Bug Fixes
