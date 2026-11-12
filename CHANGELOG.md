@@ -8,6 +8,27 @@
 
 # Changelog
 
+# Changelog
+
+## [0.2.2](https://github.com/dev-murphy/yaadchess/compare/v0.2.1...v0.2.2) (2026-11-12)
+
+### Bug Fixes
+
+* **release:** push annotated tags and use custom commitizen rules ([dfee478](https://github.com/dev-murphy/yaadchess/commit/dfee478af549e3c9c6f70953822a1434c2e9d461))
+
+## [0.2.1](https://github.com/dev-murphy/yaadchess/releases/tag/v0.2.1) (2026-11-11)
+
+### Bug Fixes
+
+* resolve all issues with CHANGELOG template ([6136968](https://github.com/dev-murphy/yaadchess/commit/6136968a6754bd02eb071ae5f9d3e5682ac568c3))
+* update syntax in CHANGELOG template file ([717989a](https://github.com/dev-murphy/yaadchess/commit/717989a00ef623521f7df19e7b08625a3e3ea242))
+* use correct field name for commitizen config ([07fe4e9](https://github.com/dev-murphy/yaadchess/commit/07fe4e988a2d6170a3a55920b66dd2f62488f0ec))
+
+### Code Refactors
+
+* update formatting the changelog file ([c8e6e86](https://github.com/dev-murphy/yaadchess/commit/c8e6e8634b88215580dc0506ebb8df00fd387cd6))
+
+
 ## [0.2.1](https://github.com/dev-murphy/yaadchess/compare/v0.2.0...v0.2.1) (2026-11-12)
 
 ### Bug Fixes
