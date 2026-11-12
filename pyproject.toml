@@ -1,7 +1,7 @@
 [project]
 name = "yaadchess"
 version = "0.1.0"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = []
 
 [dependency-groups]
@@ -10,6 +10,14 @@ dev = [
     "pytest>=9.2.0",
     "ruff>=0.17.4",
 ]
+
+[tool.ruff]
+target-version = "py312"
+extend-exclude = ["*.md", ".venv", "dist", ".github"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
