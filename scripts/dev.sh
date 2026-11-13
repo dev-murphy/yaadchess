@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Always run from the project root, regardless of where the script is called from
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
 DEV_URL="http://localhost:5173"
 set -m
@@ -34,4 +34,4 @@ if ! curl -fsS "$DEV_URL" >/dev/null 2>&1; then
 fi
 
 # Run python project (vite is stopped by the EXIT trap when this returns)
-uv run python src/__init__.py
+uv run python src/__init__.py --dev
