@@ -19,18 +19,28 @@ Frontend
 
 ## How to run?
 
-You need to ensure the `dev.sh` file is executable. Run the command below to do that.
+All scripts need to run either the `dev` and `prod` version of the application were placed in the `scripts` folder.
 
+### Set it as the executable files
 ```sh
-chmod +x dev.sh
+chmod +x scripts/dev.sh
+chmod +x scripts/prod.sh
 ```
 
-Then run the dev server using this command.
-
+### Run the development version
 ```
-./dev.sh
+./scripts/dev.sh
+```
+
+### Run the production version
+```
+./scripts/prod.sh
 ```
 
 ## What happened?
 
 If you are curious, please feel free to see [CHANGELOG](./CHANGELOG.md) to see implemented features and bug fixes.
+
+## License
+
+[MIT](./LICENSE)
