@@ -1,5 +1,49 @@
 # Changelog
 
+## [0.6.0](https://github.com/dev-murphy/yaadchess/compare/v0.5.0...v0.6.0) (2026-11-13)
+
+### Features
+
+* add basic drag function to piece component ([30be0e3](https://github.com/dev-murphy/yaadchess/commit/30be0e3db983e995b8c4edcebc444e33a90a95ac))
+* implement function to place pieces on the board based on FEN notation ([2da0333](https://github.com/dev-murphy/yaadchess/commit/2da0333194e0dc9e2678440b315a5fb014757289))
+
+### Code Refactors
+
+* made chess board a fixed width and height ([24a0fde](https://github.com/dev-murphy/yaadchess/commit/24a0fdea3d938153995cdd4a14412a734e80cd78))
+* update piece types to use FEN notation ([f4ca17d](https://github.com/dev-murphy/yaadchess/commit/f4ca17df23c6dc1d6e9753f8f8f25a6705a7dca1))
+
+### Documentation
+
+* update README to include scripts folder ([86666e3](https://github.com/dev-murphy/yaadchess/commit/86666e3912fcce7367b280d069b94e8db9d58488))
+* add MIT license ([193e4cb](https://github.com/dev-murphy/yaadchess/commit/193e4cbbf6290bf766aedf3ab2162acb2e8f03b6))
+
+### Miscellaneous
+
+* prevent window from resizing and add comments ([40d61aa](https://github.com/dev-murphy/yaadchess/commit/40d61aac41757d05cba06bf9caa9b51c3d178c65))
+
+## [0.5.0](https://github.com/dev-murphy/yaadchess/releases/tag/v0.5.0) (2026-11-13)
+
+### Features
+
+* implement bitboard utility class ([ecaf234](https://github.com/dev-murphy/yaadchess/commit/ecaf234d1859f9c291232f16d1016afe5d563d2c))
+* refactor to handle dev and production version of the app ([ed6cbc6](https://github.com/dev-murphy/yaadchess/commit/ed6cbc610183a6dd00015f8612f42c2afb1e11df))
+* create scripts folder ([4349b18](https://github.com/dev-murphy/yaadchess/commit/4349b1810bcaad29c4da2de34488b9e6d5300e29))
+* add second chess piece set to app ([315ee3c](https://github.com/dev-murphy/yaadchess/commit/315ee3ca2c46a6923a6231daaf551619b5aaa1e2))
+
+### Bug Fixes
+
+* disable erasableSyntaxOnly field ([d42cfb8](https://github.com/dev-murphy/yaadchess/commit/d42cfb8eda22c431cda0b30a609c43a065358bfe))
+* remove unused yarn.lock ([6998fa5](https://github.com/dev-murphy/yaadchess/commit/6998fa54df68c30fc1ffb862021cc8a1131bbcc8))
+
+### Code Refactors
+
+* use base_url in getPiece image function ([1ba95aa](https://github.com/dev-murphy/yaadchess/commit/1ba95aa1d058fc4531454d30709fa3601deb008a))
+
+### Miscellaneous
+
+* add build config for pywebview production build ([17a9405](https://github.com/dev-murphy/yaadchess/commit/17a9405f2d42278b9336a35edd0def8036ce0c74))
+
+
 ## [0.5.0](https://github.com/dev-murphy/yaadchess/compare/v0.4.0...v0.5.0) (2026-11-13)
 
 ### Features
