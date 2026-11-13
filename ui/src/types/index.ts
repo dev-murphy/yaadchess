@@ -8,13 +8,17 @@ export enum PieceColor {
   WHITE="white"
 }
 
-export enum PieceType {
-  KING="king",
-  QUEEN="queen",
-  BISHOP="bishop",
-  KNIGHT="knight",
-  PAWN="pawn"
-}
+export const PieceMap = {
+  k: "king",
+  q: "queen",
+  b: "bishop",
+  n: "knight",
+  r: "rook",
+  p: "pawn"
+} as const;
+
+export type PieceLetter = keyof typeof PieceMap;
+export type PieceType = (typeof PieceMap[keyof typeof PieceMap])
 
 export type SquareInfo = {
   color: string;
