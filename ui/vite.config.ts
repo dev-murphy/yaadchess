@@ -28,4 +28,11 @@ export default defineConfig({
     Tailwindcss(),
     Webfontdl(),
   ],
+  // Build Config
+  base: './',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    sourcemap: false
+  }
 });
